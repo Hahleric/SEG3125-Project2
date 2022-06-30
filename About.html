@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HongBin Lou</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const ottawa = { lat: 45.42, lng:  -75.69 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: ottawa,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: ottawa,
+                map: map,
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .navbar-custom {
+            height: 10%;
+        }
+
+        .titleText{
+            opacity: 1;
+            color: rgba(54,41,47,1);
+            font-family: "IBMPlexSans-Light";
+            font-size: 66px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0;
+            text-align: left;
+            position: absolute;
+            left: 20%;
+            z-index: 100;
+        }
+
+        .descriptionText{
+            opacity: 1;
+            color: rgba(54,41,47,1);
+            font-family: "IBMPlexSans-Light";
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0;
+            text-align: left;
+            position: absolute;
+            left: 20%;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div style="position:absolute;top: 0;left: 0;width: 100%; height: 90%">
+    <p class="titleText" style="top: 20%">
+        鸿宾楼
+    </p>
+
+    <p class="descriptionText" style="top: 24.55%;left: 40%">
+        Tel. (613) 888-8888
+    </p>
+    <div id="map" style="height:20%;width:60%;z-index: 99;position: absolute; top: 55%; left: 20%"></div>
+    <p class="descriptionText" style="top: 35%">
+        The Muslim restaurant Hong Bin Lou (鸿宾楼) was<br>
+        established in Tianjin city in 1853. In 1955, because<br>
+        its long-standing reputation in quality, China's<br>
+        Premier Zhou Enlai invited the restaurant to set its<br>
+        first branch in the capital of China.<br>
+    </p>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer
+    ></script>
+    <img src="asset/8029c978ee391ca180a35fd3689c9d6.jpg" class="background" alt="Hongbin Lou">
+    <p class="descriptionText" style="top: 77%;">
+        Address:<br>
+    </p>
+    <p class="descriptionText" style="top: 81%;">
+        293 Chapel Ave.<br>
+    </p>
+    <p class="descriptionText" style="top: 84%;">
+        Tianjin China<br>
+    </p>
+    <p class="descriptionText" style="top: 87%;">
+        Tel. (613) 888-8888<br>
+    </p>
+    <p class="descriptionText" style="top: 77%; left: 50%;font-size: 20px">
+        Open Hours: <br>
+        MON. 11:30 - 22:00<br>
+        TUE    11:30 - 22:00<br>
+        WED. 11:30 - 22:00<br>
+        THU.  11:30 - 22:00<br>
+        FRI.   11:30 - 22:00<br>
+        SAT.  11:30 - 22:00<br>
+        SUN.  11:30 - 22:00<br>
+    </p>
+</div>
+
+<nav class="navbar navbar-custom fixed-bottom navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Homepage.html">鸿宾楼</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="Menu.html">Menu<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
